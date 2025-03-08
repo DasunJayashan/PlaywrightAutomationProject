@@ -16,7 +16,7 @@ test.describe('Apply hooks to all tests',()=>{
     test.afterEach(async({page})=>{
         await page.close();
     });
-    test('Verify navigation to the register success page', async ({ page }) => {
+    test('Verify navigation to the register success page @Reg', async ({ page }) => {
         await registerPage.register({
             firstName: "First Name Test",
             lastName: "Last Name Test",
